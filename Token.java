@@ -17,8 +17,8 @@ public final class Token {
     public static final int LPAREN = 7;  // (
     public static final int RPAREN = 8;  // )
     public static final int NUMBER = 9;  // number
-    public static final int UNARY  = 10;  // - unario (no se usa en el lexer) 
-    public static final int ERROR  = 11; // error
+    public static final int ERROR  = 10; // error
+    public static final int UNARY  = 11;  // - unario (no se usa en el lexer) 
 
     // Esto puede ser bastante util ajdaskljalsk
     private static final String[] tokens = {
