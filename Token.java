@@ -2,7 +2,9 @@
     Laboratorio No. 3 - Recursive Descent Parsing
     CC4 - Compiladores
 
-    clase que sirve para representar un token
+    Clase que sirve para representar un token
+
+    Actualizado: agosto de 2021, Luis Cu
 */
 
 public final class Token {
@@ -18,9 +20,9 @@ public final class Token {
     public static final int RPAREN = 8;  // )
     public static final int NUMBER = 9;  // number
     public static final int ERROR  = 10; // error
-    public static final int UNARY  = 11;  // - unario (no se usa en el lexer) 
+    public static final int UNARY  = 11;  // ~ menos unario
 
-    // Esto puede ser bastante util ajdaskljalsk
+    // Esto puede ser bastante util
     private static final String[] tokens = {
         ";",
         "+",
@@ -32,7 +34,8 @@ public final class Token {
         "(",
         ")",
         "NUMBER",
-        "ERROR"
+        "ERROR",
+        "~"
     };
 
     private int id;
@@ -59,7 +62,7 @@ public final class Token {
         return this.id;
     }
 
-    // Para comparar, esto es bien util
+    // Para comparar, esto es muy util
     public boolean equals(int id) {
         return this.id == id;
     }
