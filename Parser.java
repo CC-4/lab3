@@ -102,13 +102,13 @@ public class Parser {
         	double a = this.operandos.pop();
         	double b = this.operandos.pop();
         	// print para debug, quitarlo al terminar
-        	System.out.println("suma " + a + " + " b);
+        	System.out.println("suma " + a + " + " + b);
         	this.operandos.push(a + b);
         } else if (op.equals(Token.MULT)) {
         	double a = this.operandos.pop();
         	double b = this.operandos.pop();
         	// print para debug, quitarlo al terminar
-        	System.out.println("mult " + a + " * " b);
+        	System.out.println("mult " + a + " * " + b);
         	this.operandos.push(a * b);
         }
     }
